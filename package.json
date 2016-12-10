@@ -1,0 +1,32 @@
+{
+  "name": "node-typescript-boilerplate",
+  "version": "0.0.1",
+  "description": "A minimalistic boilerplate to use Node.js with Typescript",
+  "scripts": {
+    "start": "ts-node src",
+    "build": "rm -rf dist && tsc",
+    "lint": "tslint \"src/**/*.ts\"",
+    "pretest": "npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Tobias Fuhrimann",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^1.7.0",
+    "typescript": "^2.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.49",
+    "tslint": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mastertinner/nodejs-typescript-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mastertinner/nodejs-typescript-boilerplate/issues"
+  }
+}
