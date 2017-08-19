@@ -1,3 +1,9 @@
-import { exists } from "fs";
+import { statSync } from "fs";
 
-exists("./package.json", (exists) => console.log(exists));
+// Returns the project's size in bytes
+export function projectSize(): number {
+  const stats = statSync(__dirname);
+  return stats.size;
+}
+
+console.log(`Project size of ${__dirname}: ${projectSize()} bytes`);
