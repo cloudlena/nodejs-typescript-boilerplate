@@ -13,21 +13,21 @@
     "build": "rimraf dist && tsc",
     "lint": "tslint --fix 'src/**/*.ts'",
     "pretest": "npm run lint",
-    "test": "mocha --compilers ts-node/register src/**/*.spec.ts"
+    "test": "mocha --require ts-node/register src/**/*.spec.ts"
   },
   "dependencies": {
-    "@types/node": "^8.0.28"
+    "@types/node": "^8.0.31"
   },
   "devDependencies": {
     "@types/chai": "^4.0.4",
     "@types/mocha": "^2.2.43",
     "chai": "^4.1.2",
-    "mocha": "^3.5.0",
-    "nodemon": "^1.12.0",
-    "rimraf": "^2.6.1",
+    "mocha": "^4.0.0",
+    "nodemon": "^1.12.1",
+    "rimraf": "^2.6.2",
     "ts-node": "^3.3.0",
     "tslint": "^5.7.0",
-    "typescript": "^2.5.2"
+    "typescript": "^2.5.3"
   },
   "repository": {
     "type": "git",
