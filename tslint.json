@@ -1,7 +1,0 @@
-{
-  "extends": ["tslint:latest"],
-  "rules": {
-    "no-console": false,
-    "no-implicit-dependencies": [true, "dev"]
-  }
-}
