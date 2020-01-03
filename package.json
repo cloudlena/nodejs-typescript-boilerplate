@@ -4,45 +4,41 @@
   "keywords": [
     "typescript"
   ],
-  "author": "Tobi Fuhrimann",
-  "license": "MIT",
+  "private": true,
+  "author": "Lena Fuhrimann",
+  "license": "Apache-2.0",
   "scripts": {
+    "postinstall": "husky install",
     "start": "node dist",
     "start:dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.test.ts' --exec 'ts-node' src/index.ts",
     "build": "rimraf dist && tsc",
-    "build:docker": "docker build -t node-typescript-boilerplate .",
+    "build:image": "docker build -t node-typescript-boilerplate .",
     "lint": "eslint --fix 'src/**/*.ts'",
     "pretest": "npm run lint",
     "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.25",
-    "@types/node": "^13.1.2",
-    "@typescript-eslint/eslint-plugin": "^2.14.0",
-    "@typescript-eslint/parser": "^2.14.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^3.1.0",
-    "jest": "^24.9.0",
-    "lint-staged": "^9.5.0",
-    "nodemon": "^2.0.2",
-    "prettier": "^1.19.1",
-    "rimraf": "^3.0.0",
-    "ts-jest": "^24.2.0",
-    "ts-node": "^8.5.4",
-    "typescript": "^3.7.4"
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.5.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
   },
   "lint-staged": {
     "src/**/*.ts": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "repository": {
     "type": "git",
@@ -50,8 +46,5 @@
   },
   "bugs": {
     "url": "https://github.com/mastertinner/nodejs-typescript-boilerplate/issues"
-  },
-  "engines": {
-    "node": ">=12"
   }
 }
