@@ -1,15 +1,13 @@
-FROM node:current as builder
-RUN groupadd -r appuser && useradd --no-log-init -r -g appuser appuser
-WORKDIR /usr/src/app
-COPY . ./
+FROM node:current AS builder
+WORKDIR /app
+COPY . .
 RUN npm ci
 RUN npm run build
 
 FROM node:current-alpine
-WORKDIR /usr/src/app
-COPY --from=builder /usr/src/app/package*.json ./
-COPY --from=builder /usr/src/app/dist dist/
-COPY --from=builder /etc/passwd /etc/passwd
+WORKDIR /app
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/dist dist/
 RUN npm ci --production
-USER appuser
-ENTRYPOINT ["npm", "start"]
+USER node
+CMD ["npm", "start"]
