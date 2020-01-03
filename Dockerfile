@@ -12,4 +12,4 @@ COPY --from=builder /usr/src/app/dist dist/
 COPY --from=builder /etc/passwd /etc/passwd
 RUN npm ci --production
 USER appuser
-ENTRYPOINT ["npm", "start"]
+CMD ["npm", "start"]
