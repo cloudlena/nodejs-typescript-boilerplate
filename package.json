@@ -16,16 +16,16 @@
     "test": "mocha --require ts-node/register/type-check src/**/*.test.ts"
   },
   "dependencies": {
-    "@types/node": "^8.0.57"
+    "@types/node": "^8.5.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.0.8",
+    "@types/chai": "^4.0.10",
     "@types/mocha": "^2.2.44",
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
-    "nodemon": "^1.12.5",
+    "nodemon": "^1.13.3",
     "rimraf": "^2.6.2",
-    "ts-node": "^4.0.1",
+    "ts-node": "^4.0.2",
     "tslint": "^5.8.0",
     "typescript": "^2.6.2"
   },
