@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/mastertinner/nodejs-typescript-boilerplate.svg?branch=master)](https://travis-ci.org/mastertinner/nodejs-typescript-boilerplate)
 
-A minimalistic boilerplate to use Node.js with Typescript
+A minimalistic boilerplate to use Node.js with TypeScript
 
 ## Lint code and run tests
 
