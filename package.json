@@ -16,17 +16,17 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.11",
-    "@types/node": "^11.13.7",
+    "@types/jest": "^24.0.12",
+    "@types/node": "^12.0.0",
     "@typescript-eslint/eslint-plugin": "^1.7.0",
     "@typescript-eslint/parser": "^1.7.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "husky": "^2.1.0",
-    "jest": "^24.7.1",
-    "lint-staged": "^8.1.5",
-    "nodemon": "^1.18.11",
+    "husky": "^2.2.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.1.6",
+    "nodemon": "^1.19.0",
     "prettier": "^1.17.0",
     "rimraf": "^2.6.3",
     "ts-jest": "^24.0.2",
@@ -52,6 +52,6 @@
     "url": "https://github.com/mastertinner/nodejs-typescript-boilerplate/issues"
   },
   "engines": {
-    "node": ">=11"
+    "node": ">=12"
   }
 }
