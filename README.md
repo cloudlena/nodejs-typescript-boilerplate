@@ -1,4 +1,4 @@
-# Node.js Typescript Boilerplate
+# Node.js TypeScript Boilerplate
 
 [![Build Status](https://travis-ci.org/mastertinner/nodejs-typescript-boilerplate.svg?branch=master)](https://travis-ci.org/mastertinner/nodejs-typescript-boilerplate)
 
