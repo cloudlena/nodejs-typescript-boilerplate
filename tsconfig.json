@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "forceConsistentCasingInFileNames": true,
     "module": "CommonJS",
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "dist",
+    "target": "ES2016",
     "strict": true,
-    "target": "ES2016"
+    "outDir": "dist",
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true
   },
   "include": ["src/**/*.ts"]
 }
