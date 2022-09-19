@@ -1,7 +1,11 @@
 {
-  "extends": "@tsconfig/node16/tsconfig.json",
+  "extends": [
+    "@tsconfig/node-lts/tsconfig",
+    "@tsconfig/esm/tsconfig",
+    "@tsconfig/strictest/tsconfig"
+  ],
   "compilerOptions": {
     "outDir": "dist"
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*.ts"]
 }
