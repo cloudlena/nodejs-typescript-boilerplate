@@ -1,7 +1,5 @@
 # Node.js TypeScript Boilerplate
 
-[![Build Status](https://img.shields.io/travis/mastertinner/nodejs-typescript-boilerplate.svg?style=flat-square)](https://travis-ci.org/mastertinner/nodejs-typescript-boilerplate)
-
 A minimalistic boilerplate to use Node.js with TypeScript
 
 ## Lint code and run tests
