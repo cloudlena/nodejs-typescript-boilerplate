@@ -1,7 +1,7 @@
 import { projectSize } from "./index";
 
-describe("projectSize", (): void => {
-  it("returns a number", (): void => {
+describe("projectSize", () => {
+  it("returns a number", () => {
     const result = projectSize();
     expect(typeof result).toBe("number");
   });

@@ -1,15 +1,14 @@
-FROM node:current as builder
-RUN groupadd -r appuser && useradd --no-log-init -r -g appuser appuser
+FROM docker.io/library/node:current AS builder
 WORKDIR /usr/src/app
-COPY . ./
+COPY . .
 RUN npm ci
 RUN npm run build
 
-FROM node:current-alpine
+FROM docker.io/library/node:current-alpine
+ENV NODE_ENV production
 WORKDIR /usr/src/app
-COPY --from=builder /usr/src/app/package*.json ./
-COPY --from=builder /usr/src/app/dist dist/
-COPY --from=builder /etc/passwd /etc/passwd
-RUN npm ci --production
-USER appuser
-ENTRYPOINT ["npm", "start"]
+COPY --from=builder --chown=node:node /usr/src/app/package*.json ./
+COPY --from=builder --chown=node:node /usr/src/app/dist dist/
+RUN npm ci --production --ignore-scripts
+USER node
+CMD ["npm", "start"]
