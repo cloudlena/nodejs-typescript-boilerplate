@@ -9,25 +9,25 @@
   "license": "MIT",
   "scripts": {
     "start": "node dist",
-    "start:dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
+    "start:dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.test.ts' --exec 'ts-node' src/index.ts",
     "build": "rimraf dist && tsc",
     "lint": "tslint --fix 'src/**/*.ts'",
     "pretest": "npm run lint",
-    "test": "mocha --require ts-node/register src/**/*.spec.ts"
+    "test": "mocha --require ts-node/register src/**/*.test.ts"
   },
   "dependencies": {
-    "@types/node": "^8.0.31"
+    "@types/node": "^8.0.47"
   },
   "devDependencies": {
     "@types/chai": "^4.0.4",
-    "@types/mocha": "^2.2.43",
+    "@types/mocha": "^2.2.44",
     "chai": "^4.1.2",
-    "mocha": "^4.0.0",
+    "mocha": "^4.0.1",
     "nodemon": "^1.12.1",
     "rimraf": "^2.6.2",
     "ts-node": "^3.3.0",
-    "tslint": "^5.7.0",
-    "typescript": "^2.5.3"
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
   },
   "repository": {
     "type": "git",
