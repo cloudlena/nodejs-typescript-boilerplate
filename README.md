@@ -4,19 +4,21 @@
 
 A minimalistic boilerplate to use Node.js with TypeScript
 
-## Lint Code and Run Tests
+## Setup
 
 1. Run `npm install`
+
+## Lint Code and Run Tests
+
+1. Run `npm run lint`
 1. Run `npm test`
 
 ## Run Live Server for Development
 
-1. Run `npm install`
-1. Run `npm run start:dev`
+1. Run `npm run dev`
 
 ## Compile and Run in Production
 
-1. Run `npm install`
 1. Run `npm run build`
 1. Run `npm start`
 
