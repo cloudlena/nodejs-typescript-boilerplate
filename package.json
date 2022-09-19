@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^7.0.0",
-    "tslint": "^5.0.0"
+    "tslint": "^5.1.0"
   },
   "repository": {
     "type": "git",
