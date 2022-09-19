@@ -5,7 +5,7 @@
   "scripts": {
     "start": "ts-node src",
     "build": "rimraf dist && tsc",
-    "lint": "tslint \"src/**/*.ts\"",
+    "lint": "tslint --fix src/**/*.ts",
     "pretest": "npm run lint",
     "test": "echo \"Error: no test specified\""
   },
