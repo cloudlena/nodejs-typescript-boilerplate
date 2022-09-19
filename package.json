@@ -15,7 +15,7 @@
   "author": "Tobias Fuhrimann",
   "license": "ISC",
   "dependencies": {
-    "ts-node": "^1.7.3",
+    "ts-node": "^2.0.0",
     "typescript": "^2.1.4"
   },
   "devDependencies": {
