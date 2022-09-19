@@ -1,11 +1,20 @@
 name: Lint and Test
-on: push
+
+on: [push, pull_request]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@master
-      - run: npm ci
-      - run: npm run lint
-      - run: npm test
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Audit dependencies
+        run: npm audit
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint code
+        run: npm run lint
+      - name: Run tests
+        run: npm test

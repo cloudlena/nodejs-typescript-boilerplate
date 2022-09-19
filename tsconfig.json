@@ -1,12 +1,7 @@
 {
+  "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2016",
-    "strict": true,
-    "outDir": "dist",
-    "noImplicitReturns": true,
-    "forceConsistentCasingInFileNames": true,
-    "noUnusedLocals": true
+    "outDir": "dist"
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*"]
 }
