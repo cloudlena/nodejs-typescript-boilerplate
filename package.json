@@ -13,7 +13,7 @@
     "typescript"
   ],
   "author": "Tobias Fuhrimann",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "ts-node": "^3.0.2",
     "typescript": "^2.3.2"
@@ -29,5 +29,8 @@
   },
   "bugs": {
     "url": "https://github.com/mastertinner/nodejs-typescript-boilerplate/issues"
+  },
+  "engines": {
+      "node": ">=6"
   }
 }
